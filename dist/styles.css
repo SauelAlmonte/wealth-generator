@@ -522,22 +522,6 @@ Custom CSS
   margin: 1rem;
 }
 
-.m-6 {
-  margin: 1.5rem;
-}
-
-.m-2 {
-  margin: 0.5rem;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
-.w-screen {
-  width: 100vw;
-}
-
 .border-2 {
   border-width: 2px;
 }
@@ -550,10 +534,6 @@ Custom CSS
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
-.p-6 {
-  padding: 1.5rem;
 }
 
 .p-2 {
