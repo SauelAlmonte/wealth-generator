@@ -1,7 +1,25 @@
 // Get the DOM
-const getUserBtn = document.querySelector('#get-user')
+const userBtn = document.querySelector('#get-user')
+const sortBtn = document.querySelector('#show-user')
+const showBlnBtn = document.querySelector('#show-bills')
 
-getUserBtn.addEventListener('click', function(){
+userBtn.addEventListener('click', function(){
+    
+    console.log('Getting new User....')
     
 })
-console.log(getUserBtn)
+
+sortBtn.addEventListener('click', function(){
+    
+    console.log('Sorting Users')
+    
+})
+
+showBlnBtn.addEventListener('click', function(){
+
+    console.log('Sorting Billionaires')
+
+})
+console.log(userBtn)
+console.log(sortBtn)
+console.log(showBlnBtn)
