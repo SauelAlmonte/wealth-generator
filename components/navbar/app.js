@@ -8,6 +8,8 @@ function getNewUsers(){
 }
 
 function generateRandomUser(){
+    // make a GET request to random
+    // save that user locally (so we can display to the page)
     console.log('new user generated')
 }
 
