@@ -12,10 +12,12 @@ async function generateRandomUser(){
     // make a GET request to random
     // await/wait till the below is done, before giving me results
     const result = await fetch('https://randomuser.me/api/?gender=female')
+    const data = await result.json()
 
     // account for round-trip data
     // Before we use results
     console.log(result)
+    console.log(data)
     // save that user locally (so we can display to the page)
     console.log('new user generated')
 }
