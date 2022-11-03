@@ -1,11 +1,26 @@
 // Get the DOM
-const userBtn = document.querySelector('#get-user')
+const getUserBtn = document.querySelector('#get-user')
 const sortBtn = document.querySelector('#show-user')
 const showBlnBtn = document.querySelector('#show-bills')
 
-userBtn.addEventListener('click', function(){
+function getNewUsers(){
+    // get a new user from https://randomuser.me
+}
+
+function generateRandomUser(){
+    console.log('new user generated')
+}
+
+function addUserToPage(){
+    console.log('User added to page')
+}
+
+getUserBtn.addEventListener('click', function(){
     
-    console.log('Getting new User....')
+    // 1. get/generate a random user and wealth
+    generateRandomUser()
+    // 2. add the user to the page
+    addUserToPage()
     
 })
 
@@ -20,6 +35,3 @@ showBlnBtn.addEventListener('click', function(){
     console.log('Sorting Billionaires')
 
 })
-console.log(userBtn)
-console.log(sortBtn)
-console.log(showBlnBtn)
