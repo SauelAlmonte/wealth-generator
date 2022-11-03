@@ -7,10 +7,14 @@ function getNewUsers(){
     // get a new user from https://randomuser.me
 }
 
-function generateRandomUser(){
+// async | await used for API programming
+async function generateRandomUser(){
     // make a GET request to random
-    const result = fetch('https://randomuser.me/api/?gender=female')
+    // await/wait till the below is done, before giving me results
+    const result = await fetch('https://randomuser.me/api/?gender=female')
 
+    // account for round-trip data
+    // Before we use results
     console.log(result)
     // save that user locally (so we can display to the page)
     console.log('new user generated')
