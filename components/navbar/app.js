@@ -9,6 +9,9 @@ function getNewUsers(){
 
 function generateRandomUser(){
     // make a GET request to random
+    const result = fetch('https://randomuser.me/api/?gender=female')
+
+    console.log(result)
     // save that user locally (so we can display to the page)
     console.log('new user generated')
 }
