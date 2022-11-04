@@ -1,5 +1,5 @@
 // Get the DOM
-const getUserBtn = document.querySelector('#get-user')
+const newUserBtn = document.querySelector('#get-user')
 const sortBtn = document.querySelector('#show-user')
 const showBlnBtn = document.querySelector('#show-bills')
 
@@ -13,8 +13,8 @@ async function generateRandomUser(){
     const getUser = ''
     const url = 'https://randomuser.me/api/?gender=female'
    
-    const result = await fetch(url)
-    const data = await result.json()
+    const results = await fetch(url)
+    const data = await results.json()
     
     console.log(data)
     
@@ -26,7 +26,7 @@ function addUserToPage(){
     console.log('User added to page')
 }
 
-getUserBtn.addEventListener('click', function(){
+newUserBtn.addEventListener('click', function(){
     
     // 1. get/generate a random user and wealth
     generateRandomUser()
