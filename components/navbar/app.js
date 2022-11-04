@@ -21,7 +21,7 @@ async function generateRandomUser(){
     // Before we use results
     // console.log(typeof data)
     
-   
+    // Expanding on - shape of data, how to transform raw data, for complex transformation, working towards arrays
     console.log(data.results[0])
     // save that user locally (so we can display to the page)
     console.log('new user generated')
