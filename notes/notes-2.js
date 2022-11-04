@@ -3,28 +3,16 @@
 {
     // Arrays
     "results" : [
-        "info" : {
-            "seed" : 123456789,
-            "results" : 1,
-            "page" : 1,
-            "version" : 1.3
-
-        },
-        "info" : {
-            "seed" : 123456789,
-            "results" : 1,
-            "page" : 1,
-            "version" : 1.3
-
-        },
-        "info" : {
-            "seed" : 123456789,
-            "results" : 1,
-            "page" : 1,
-            "version" : 1.3
-
+        {
+            "gender" : "Female",
+            "name" : {},
+            "location" : {},
+            "email" : "alice.wright@example.com",
+            "login" : {}
         }
+
     ],
+    
     // Objects
     "info" : {
         "seed" : 123456789,
