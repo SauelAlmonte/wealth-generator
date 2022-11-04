@@ -22,16 +22,17 @@ async function generateRandomUser(){
     
 }
 
-function addUserToPage(){
-    console.log('User added to page')
-}
+// function addUserToPage(){
+//     console.log('User added to page')
+// }
 
 newUserBtn.addEventListener('click', function(){
     
     // 1. get/generate a random user and wealth
+    // Function declared
     generateRandomUser()
     // 2. add the user to the page
-    addUserToPage()
+    // addUserToPage()
     
 })
 
