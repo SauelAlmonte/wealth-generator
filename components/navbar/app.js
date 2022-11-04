@@ -7,19 +7,18 @@ function getNewUsers(){
     // get a new user from https://randomuser.me
 }
 
-// async | await used for API programming
+// async | await used for API programming - Makes it dynamic
 async function generateRandomUser(){
-    
-    const getUser = ''
+
     const url = 'https://randomuser.me/api/?gender=female'
-   
-    const results = await fetch(url)
-    const data = await results.json()
+
+    const result = await fetch(url)
+    const data = await result.json()
     
     console.log(data)
-    
-    console.log('new user generated')
-    
+    //
+    // console.log('new user generated')
+
 }
 
 // function addUserToPage(){
