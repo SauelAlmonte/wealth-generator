@@ -3,7 +3,7 @@
 {
     // Arrays
     "results" : [
-
+        // User API
         {
             "gender" : "Female",
             "name" : {
@@ -17,6 +17,8 @@
             },
             "email" : "alice.wright@example.com",
             "login" : {
+                "username" : "goldenduck835",
+                "password: : "123645897",
                 "uuid" : "815c5905-6a7a-4c3c-ba53-d29877a7b093"
             },
             "nat" : "TR"
