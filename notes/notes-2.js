@@ -27,12 +27,44 @@
 
         {
             "gender" : "Female",
-            "name" : {},
-            "location" : {
-                "city" : "Istanbul"
+            "name" : {
+                "first" : "Jamie",
+                "last" : "Smith",
+                "title" : "Mrs."
             },
-            "email" : "jane.wright@example.com",
-            "login" : {}
+
+            "location" : {
+                "city" : "Madrid"
+            },
+            "email" : "jamie.smiyh@example.com",
+            "login" : {
+                "username" : "JmeSmith",
+                "password: : "978425631",
+                "uuid" : "815c5905-6a7a-4c3c-ba53-d29877a7b093"
+            },
+            "nat" : "TR"
+            "phone" : "(203)-060-5758"
+        },
+
+        {
+            "gender" : "Male",
+            "name" : {
+                "first" : "James",
+                "last" : "Smith",
+                "title" : "Mr."
+            },
+
+            "location" : {
+                "city" : "Madrid"
+            },
+            "email" : "james.smith@example.com",
+            "login" : {
+                "username" : "JSmith",
+                "password: : "123645897",
+                "uuid" : "815c5905-6a7a-4c3c-ba53-d29877a7b093"
+            },
+            "nat" : "TR"
+            "phone" : "(203)-060-5758"
         }
 
     ],
