@@ -13,9 +13,41 @@ async function generateRandomUser(){
     const url = 'https://randomuser.me/api/?gender=female'
 
     const result = await fetch(url)
-    const data = await result.json()
+    // const data = await result.json()
     
-    console.log(data)
+    const remoteData = await result.json()
+    // Local Data does not need Await
+    const localData = {
+        "results" : [
+            // User API
+            {
+                "gender" : "Female",
+                "name" : {
+                    "first" : "James",
+                    "last" : "Smith",
+                    "title" : "Mr."
+                },
+
+                "location" : {
+                    "city" : "Madrid"
+                },
+                "email" : "alice.wright@example.com",
+                "login" : {
+                    "username" : "goldenduck835",
+                    "password" :  123645897,
+                    "uuid" : "815c5905-6a7a-4c3c-ba53-d29877a7b093"
+                },
+                "nat" : "TR",
+                "phone" : "(203)-060-5758"
+            }
+        ],
+    }
+
+    console.log(typeof localData)
+    console.log(localData)
+
+    // console.log(typeof remoteData)
+    // console.log(remoteData)
     //
     // console.log('new user generated')
 
