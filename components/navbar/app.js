@@ -46,6 +46,8 @@ async function generateRandomUser(){
     console.log('Local Data:', typeof localData)
     console.log('Local Data:', localData)
 
+    console.log('Local Data:', localData.results)
+
     console.log('Remote Data:',typeof remoteData)
     console.log('Remote Data:', remoteData)
     //
