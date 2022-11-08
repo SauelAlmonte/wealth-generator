@@ -52,6 +52,10 @@ async function generateRandomUser(){
     console.log('Remote Data:', typeof remoteData)
     console.log('Remote Data:', remoteData)
     //
+    // Calling Attributes
+    console.log('Remote Data:', remoteData.results[0].name.first)
+    console.log('Remote Data:', remoteData.results[0].name.last)
+    console.log('[Remote Data] - Facebook Welcome Message:', `Welcome!! ${remoteData.results[0].name.first} ${remoteData.results[0].name.last}`)
     // console.log('new user generated')
 
 }
