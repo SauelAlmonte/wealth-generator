@@ -15,6 +15,7 @@ async function generateRandomUser(){
     const result = await fetch(url)
     // const data = await result.json()
     
+    const user = []
     const remoteData = await result.json()
     // Local Data does not need Await
     const localData = {
