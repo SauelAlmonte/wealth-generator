@@ -3,24 +3,25 @@ const newUserBtn = document.querySelector('#get-user')
 const sortBtn = document.querySelector('#show-user')
 const showBlnBtn = document.querySelector('#show-bills')
 
-function getNewUsers(){
-    // get a new user from https://randomuser.me
-}
+// function getNewUsers(){
+//     // get a new user from https://randomuser.me
+// }
 
 // async | await used for API programming - Makes it dynamic
 async function generateRandomUser(){
-
     const url = 'https://randomuser.me/api/?gender=female'
     const results = await fetch(url)
     const data = await results.json()
     
+    console.log(data)
+    
     console.log('From API :',data.results[0].name.first)
     
     const user = {
-        name : `${data.results[0].name.title}. ${data.results[0].name.first} ${data.results[0].name.last}`
+        name : `${data.results[0].name.title}. ${data.results[0].name.first} ${data.results[0].name.last}, From: ${data.results[0].location.city}, ${data.results[0].location.country}.`
     }
     
-    console.log('Transformed Locally :',user.name)
+    console.log('Transformed Locally :', user.name)
 }
 
 
