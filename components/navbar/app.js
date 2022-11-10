@@ -10,7 +10,7 @@ const showBlnBtn = document.querySelector('#show-bills')
 // const is a constant variable
 // Using let = allows you to change variables
 
-let data = []
+let alUsers = []
 
 // async | await used for API programming - Makes it dynamic
 async function generateRandomUser(){
@@ -37,18 +37,18 @@ async function generateRandomUser(){
     // console.log('Transformed Locally :', user.money)
     
     // Arrays
-    const someArr = [
-        1,2,3, 'one string', 'another', newUser
-    ]
+    // const someArr = [
+    //     1,2,3, 'one string', 'another', newUser
+    // ]
     
-    console.log('Array in full:', someArr)
-    // Pulling/Getting Elements, Remember data starts at 0
-    console.log('1st Element', someArr[0]) // 1st Element
-    console.log('2nd Element', someArr[1]) // 2nd Element
-    console.log('3rd Element', someArr[2]) // 3rd Element
-    console.log('4th Element', someArr[3]) // 4th Element
-    console.log('5th Element', someArr[4]) // 5th Element
-    console.log('6th Element', someArr[5]) // 6th Element
+    // console.log('Array in full:', someArr)
+    // // Pulling/Getting Elements, Remember data starts at 0
+    // console.log('1st Element', someArr[0]) // 1st Element
+    // console.log('2nd Element', someArr[1]) // 2nd Element
+    // console.log('3rd Element', someArr[2]) // 3rd Element
+    // console.log('4th Element', someArr[3]) // 4th Element
+    // console.log('5th Element', someArr[4]) // 5th Element
+    // console.log('6th Element', someArr[5]) // 6th Element
     
 }
 
