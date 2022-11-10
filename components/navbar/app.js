@@ -12,7 +12,7 @@ const showBlnBtn = document.querySelector('#show-bills')
 
 // Using let
 let allUsers = []
-const MAX_CAPACITY = 2
+// const MAX_CAPACITY = 2
 
 // async | await used for API programming - Makes it dynamic
 async function generateRandomUser(){
@@ -78,7 +78,7 @@ newUserBtn.addEventListener('click', function(){
     
     // If the length is less than < 7, continue generating new users. Once it greater than 7,
     // else console.log('We are at capacity')
-    if(allUsers.length < MAX_CAPACITY){
+    if(allUsers.length < 2){
         generateRandomUser()
     } else {
         console.log('We are at capacity')
