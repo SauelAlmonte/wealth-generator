@@ -32,15 +32,16 @@ async function generateRandomUser(){
     }
     
     // let console.log example
+    console.log('Before saving user:', allUsers)
     
     // Content of new user
-    console.log('A new user:', newUser.name)
+    console.log('Add new user:', newUser.name)
     
-    // Adding new user to array
+    // Adding new user to array "bucket"
     allUsers.push(newUser.name)
     
     // See what the new user looks like/Content
-    console.log(allUsers)
+    console.log('After saving user:', allUsers)
     
     
     // console.log(data)
