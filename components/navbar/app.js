@@ -18,10 +18,19 @@ async function generateRandomUser(){
     console.log('From API :',data.results[0].name.first)
     
     const user = {
-        name : `${data.results[0].name.title}. ${data.results[0].name.first} ${data.results[0].name.last}, From: ${data.results[0].location.city}, ${data.results[0].location.country}.`
+        name : `${data.results[0].name.title}. ${data.results[0].name.first} ${data.results[0].name.last},`,
+        location : `From: ${data.results[0].location.city}, ${data.results[0].location.country}.`,
+        // Gives you random Values
+        // money : Math.random(),
+        // Gives you random value , times 1,000,000
+        // money : Math.random() * 1_000_000 = Gives you random amounts times 1,000,000
+        // money : Math.floor (Math.random() * 1_000_000) = Gives you random amounts times 1,000,000, and removes decimals
+        money : Math.floor (Math.random() * 1_000_000)
     }
     
     console.log('Transformed Locally :', user.name)
+    console.log('Transformed Locally :', user.location)
+    console.log('Transformed Locally :', user.money)
 }
 
 
