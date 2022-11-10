@@ -10,6 +10,7 @@ const showBlnBtn = document.querySelector('#show-bills')
 // const is a constant variable
 // Using let = allows you to change variables
 
+// Using let
 let allUsers = []
 
 // async | await used for API programming - Makes it dynamic
@@ -32,6 +33,7 @@ async function generateRandomUser(){
     }
     
     // let console.log example
+    console.log('Count Before saving user:', allUsers.length)
     console.log('Before saving user:', allUsers)
     
     // Content of new user
@@ -41,6 +43,7 @@ async function generateRandomUser(){
     allUsers.push(newUser.name)
     
     // See what the new user looks like/Content
+    console.log('Count After saving user:', allUsers.length)
     console.log('After saving user:', allUsers)
     
     
@@ -71,7 +74,14 @@ newUserBtn.addEventListener('click', function(){
     
     // 1. get/generate a random user and wealth
     // Function declared
-    generateRandomUser()
+    
+    // If the length is less than < 7, continue generating new users. Once it greater than 7,
+    // else console.log('We are at capacity')
+    if(allUsers.length < 7){
+        generateRandomUser()
+    } else {
+        console.log('We are at capacity')
+    }
     // 2. add the user to the page
     // addUserToPage()
     
