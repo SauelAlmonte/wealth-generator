@@ -31,10 +31,14 @@ async function generateRandomUser(){
         
     }
     
-    // let example
+    // let console.log example
     console.log('A new user:', newUser.name)
     
     allUsers.push(newUser.name)
+    
+    console.log(allUsers)
+    
+    
     // console.log(data)
     // console.log('From API :',data.results[0].name.first)
     // console.log('Transformed Locally :', user.name)
