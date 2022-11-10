@@ -32,10 +32,14 @@ async function generateRandomUser(){
     }
     
     // let console.log example
+    
+    // Content of new user
     console.log('A new user:', newUser.name)
     
+    // Adding new user to array
     allUsers.push(newUser.name)
     
+    // See what the new user looks like/Content
     console.log(allUsers)
     
     
