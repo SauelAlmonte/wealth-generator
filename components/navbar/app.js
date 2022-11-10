@@ -7,6 +7,11 @@ const showBlnBtn = document.querySelector('#show-bills')
 //     // get a new user from https://randomuser.me
 // }
 
+// const is a constant variable
+// Using let = allows you to change variables
+
+let data = []
+
 // async | await used for API programming - Makes it dynamic
 async function generateRandomUser(){
     const url = 'https://randomuser.me/api/?gender=female'
