@@ -12,61 +12,16 @@ async function generateRandomUser(){
 
     const url = 'https://randomuser.me/api/?gender=female'
 
-    const result = await fetch(url)
-    const data = await result.json()
+    const results = await fetch(url)
+    const data = await results.json()
     
+    console.log(data.results[0].name.first)
     const user = {
-        name : data.result[0].name.first
+        name : data.results[0].name.first
     }
     
-    // const remoteData = await result.json()
-    // Local Data does not need Await
-    // const localData = {
-    //     "results" : [
-    //         // User API
-    //         {
-    //             "gender" : "Female",
-    //             "name" : {
-    //                 "first" : "James",
-    //                 "last" : "Smith",
-    //                 "title" : "Mr."
-    //             },
-    //
-    //             "location" : {
-    //                 "city" : "Madrid"
-    //             },
-    //             "email" : "alice.wright@example.com",
-    //             "login" : {
-    //                 "username" : "goldenduck835",
-    //                 "password" :  123645897,
-    //                 "uuid" : "815c5905-6a7a-4c3c-ba53-d29877a7b093"
-    //             },
-    //             "nat" : "TR",
-    //             "phone" : "(203)-060-5758"
-    //         }
-    //     ],
-    // }
-
-    // console.log('Local Data:', typeof localData)
-    // console.log('Local Data:', localData)
-    //
-    // console.log('Local Data [Results Attributes - typeof]:', typeof localData.results)
-    // console.log('Local Data [Results Attributes]:', localData.results)
-    //
-    // console.log('Remote Data:', typeof remoteData)
-    // console.log('Remote Data:', remoteData)
-    // //
-    // // Calling Attributes
-    // console.log('Remote Data:', remoteData.results[0].name.first)
-    // console.log('Remote Data:', remoteData.results[0].name.last)
-    // console.log('[Remote Data] - Facebook Welcome Message:', `Welcome!! ${remoteData.results[0].name.first} ${remoteData.results[0].name.last}`)
-    // console.log('new user generated')
-
 }
 
-// function addUserToPage(){
-//     console.log('User added to page')
-// }
 
 newUserBtn.addEventListener('click', function(){
     
