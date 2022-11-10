@@ -25,7 +25,8 @@ async function generateRandomUser(){
         // Gives you random value , times 1,000,000
         // money : Math.random() * 1_000_000 = Gives you random amounts times 1,000,000
         // money : Math.floor (Math.random() * 1_000_000) = Gives you random amounts times 1,000,000, and removes decimals
-        money : Math.floor (Math.random() * 1_000_000)
+        // Formatted using string Literal 
+        money : `${Math.floor (Math.random() * 1_000_000)}`
     }
     
     console.log('Transformed Locally :', user.name)
