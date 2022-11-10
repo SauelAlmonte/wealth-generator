@@ -17,7 +17,7 @@ async function generateRandomUser(){
     console.log('From API :',data.results[0].name.first)
     
     const user = {
-        name : `${data.results[0].name.title} ${data.results[0].name.first} ${data.results[0].name.last}`
+        name : `${data.results[0].name.title}. ${data.results[0].name.first} ${data.results[0].name.last}`
     }
     
     console.log('Transformed Locally :',user.name)
