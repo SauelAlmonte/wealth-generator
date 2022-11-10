@@ -11,15 +11,16 @@ function getNewUsers(){
 async function generateRandomUser(){
 
     const url = 'https://randomuser.me/api/?gender=female'
-
     const results = await fetch(url)
     const data = await results.json()
     
-    console.log(data.results[0].name.first)
+    console.log('From API :',data.results[0].name.first)
+    
     const user = {
-        name : data.results[0].name.first
+        name : `${data.results[0].name.title} ${data.results[0].name.first} ${data.results[0].name.last}`
     }
     
+    console.log('Transformed Locally :',user.name)
 }
 
 
