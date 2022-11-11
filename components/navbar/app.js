@@ -86,7 +86,7 @@ newUserBtn.addEventListener('click', function(){
         // console.log('We are at capacity')
         
         errMsg.className = 'font-bold text-2xl text-white bg-red-700 p-3 w-40 text-center '
-        newUserBtn.className = 'disabled border-2 border-black bg-gray-400 p-2 font-bold rounded shadow-xl text-white'
+        newUserBtn.className = 'disabled border-2 border-black bg-gray-400 p-2 font-bold rounded shadow-xl text-white cursor-not-allowed '
     }
     // 2. add the user to the page
     // addUserToPage()
