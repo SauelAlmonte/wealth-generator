@@ -3,6 +3,8 @@ const newUserBtn = document.querySelector('#get-user')
 const sortBtn = document.querySelector('#show-user')
 const showBlnBtn = document.querySelector('#show-bills')
 
+const errMsg = document.querySelector('#error')
+
 // function getNewUsers(){
 //     // get a new user from https://randomuser.me
 // }
@@ -81,7 +83,9 @@ newUserBtn.addEventListener('click', function(){
     if(allUsers.length < 2){
         generateRandomUser()
     } else {
-        console.log('We are at capacity')
+        // console.log('We are at capacity')
+        
+        errMsg.className = ' font-bold text-2xl text-white bg-red-500 p-3 w-40 text-center'
     }
     // 2. add the user to the page
     // addUserToPage()
