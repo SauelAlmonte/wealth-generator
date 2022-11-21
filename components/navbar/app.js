@@ -24,7 +24,7 @@ async function generateRandomUser(){
     
     const newUser = {
         name : `${data.results[0].name.title}. ${data.results[0].name.first} ${data.results[0].name.last},`,
-        location : `From: ${data.results[0].location.city}, ${data.results[0].location.}.`,
+        location : `From: ${data.results[0].location.city}, ${data.results[0].location.country}.`,
         // Gives you random Values
         // money : Math.random(),
         // Gives you random value , times 1,000,000
