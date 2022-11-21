@@ -77,17 +77,10 @@ newUserBtn.addEventListener('click', function(){
     
     // 1. get/generate a random user and wealth
     // Function declared
-    
+    generateRandomUser()
     // If the length is less than < 7, continue generating new users. Once it greater than 7,
     // else console.log('We are at capacity')
-    if(allUsers.length < 4){
-        generateRandomUser()
-    } else {
-        // console.log('We are at capacity')
-        
-        errMsg.className = 'font-bold text-2xl text-white bg-red-700 p-3 w-40 text-center '
-        newUserBtn.className = 'disabled border-2 border-black bg-gray-400 p-2 font-bold rounded shadow-xl text-white cursor-not-allowed '
-    }
+    
     // 2. add the user to the page
     // addUserToPage()
     
