@@ -35,19 +35,19 @@ async function generateRandomUser(){
         
     }
     
-    // let console.log example
-    console.log('Count Before saving user:', allUsers.length)
-    console.log('Before saving user:', allUsers)
-    
-    // Content of new user
-    console.log('Add new user:', newUser.name)
-    
-    // Adding new user to array "bucket"
-    allUsers.push(newUser.name)
-    
-    // See what the new user looks like/Content
-    console.log('Count After saving user:', allUsers.length)
-    console.log('After saving user:', allUsers)
+    // // let console.log example
+    // console.log('Count Before saving user:', allUsers.length)
+    // console.log('Before saving user:', allUsers)
+    //
+    // // Content of new user
+    // console.log('Add new user:', newUser.name)
+    //
+    // // Adding new user to array "bucket"
+    // allUsers.push(newUser.name)
+    //
+    // // See what the new user looks like/Content
+    // console.log('Count After saving user:', allUsers.length)
+    // console.log('After saving user:', allUsers)
     
     
     // console.log(data)
@@ -69,9 +69,16 @@ async function generateRandomUser(){
     // console.log('4th Element', someArr[3]) // 4th Element
     // console.log('5th Element', someArr[4]) // 5th Element
     // console.log('6th Element', someArr[5]) // 6th Element
-    
+
+    appendData(newUser)
 }
 
+function appendData(obj){
+    
+    allUsers.push(obj)
+
+    console.log('All Users Arr:', allUsers)
+}
 
 newUserBtn.addEventListener('click', function(){
     
