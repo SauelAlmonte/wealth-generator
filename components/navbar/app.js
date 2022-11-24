@@ -49,7 +49,6 @@ async function generateRandomUser(){
     // console.log('Count After saving user:', allUsers.length)
     // console.log('After saving user:', allUsers)
     
-    
     // console.log(data)
     // console.log('From API :',data.results[0].name.first)
     // console.log('Transformed Locally :', user.name)
@@ -75,9 +74,15 @@ async function generateRandomUser(){
 
 function appendData(obj){
     
+    // allUsers is an array
+    // .forEach() is a function call on arrays that loops the content of the array
     allUsers.push(obj)
+    
+    allUsers.forEach(function(i){
+        console.log(i)
+    })
 
-    console.log('All Users Arr:', allUsers)
+    // console.log('All Users Arr:', allUsers)
 }
 
 newUserBtn.addEventListener('click', function(){
