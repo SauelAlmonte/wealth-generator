@@ -77,9 +77,9 @@ function appendData(obj){
     // allUsers is an array
     // .forEach() is a function call on arrays that loops the content of the array
     allUsers.push(obj)
-    
+    console.log("User Count :",allUsers.length)
     allUsers.forEach(function(i){
-        console.log(i)
+        console.log(i.name)
     })
 
     // console.log('All Users Arr:', allUsers)
