@@ -6,10 +6,10 @@ let allUser = [] // Arrays
 
 console.log("Content Before:", allUser)
 
-allUser.push('string')
+allUser.push('string') // Adding String
 
 console.log("Content After 1st:", allUser)
 
-allUser.push(1)
+allUser.push(1) // Adding a Number
 
 console.log("Content After 2nd:", allUser)
