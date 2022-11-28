@@ -10,60 +10,23 @@
     <title>Wealth Generator</title>
 </head>
 
-<body class="bg-red-300 ">
-<div class="border-2 border-black h-42 shadow-xl ">
-    <h1
-            class="font-bold text-4xl text-center p-2 "
+<body class="flex flex-col items-center h-screen bg-red-200  ">
 
-    >
-        Wealth Generator
-    </h1>
+<h1 class="text-3xl"> Wealth Generator</h1>
 
+<div class="flex p-6 w-1/2">
+    <aside class="mx-4">
+        <button class="rounded bg-green-200 block my-3 px-2 py-3 w-full font-bold " id="add-user">My New User</button>
+        <button class="rounded bg-green-200 block my-3 px-2 py-3 w-full font-bold " id="double">Double Money</button>
+        <button class="rounded bg-green-200 block my-3 px-2 py-3 w-full font-bold " id="show-millionaires">Show Only Millionaires</button>
+        <button class="rounded bg-green-200 block my-3 px-2 py-3 w-full font-bold " id="sort">Sort by Richest</button>
+        <button class="rounded bg-green-200 block my-3 px-2 py-3 w-full font-bold " id="calc-wealth">Calculate Entire Wealth</button>
+    </aside>
 
-</div>
-<div class="pl-2 mt-6 w-1/2">
-    <button
-            class="border-2 border-black bg-white p-2 font-bold rounded shadow-xl "
-            id="get-user"
-    >
-        Get User
+    <main class="w-1/2 border-l-2 border-black mr-5 mx-3 px-3 text-center" id="main">
+        <h2 class="border-b-2 border-black flex justify-between"><strong>Person</strong>Wealth</h2>
+    </main>
 
-    </button>
-    <button
-            class="border-2 border-black bg-white p-2 font-bold rounded shadow-xl "
-            id="show-user"
-    >
-        Sort User
-
-    </button>
-    <button
-            class="border-2 border-black bg-white p-2 font-bold rounded shadow-xl "
-            id="show-bills"
-    >
-        Sort Billionaires
-
-    </button>
-    <div
-            class=" h-1/2 w-1/2 p-1 pt-2 pb-2 text-lg font-bold"
-    >
-        <div
-                class=""
-        >
-            Name
-        </div>
-
-        <div
-                class=""
-        >
-            Net Worth ($)
-        </div>
-    </div>
-
-    <div id="error"
-         class=" hidden "
-    >
-        We are at capacity!!!
-    </div>
 </div>
 
 <script src="/components/navbar/app.js"></script>
